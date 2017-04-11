@@ -1,0 +1,98 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+/*字體*/
+@font-face {
+      font-family: avant;
+      src: url(fonts/avantgargotitctee.ttf);
+}
+@font-face {
+      font-family: NotoSans_light;
+      src: url(fonts/NotoSansCJKtc-Light.otf);
+}
+@font-face {
+      font-family: NotoSans_bold;
+      src: url(fonts/NotoSansCJKtc-Bold.otf);
+}
+@font-face {
+      font-family: calibri;
+      src: url(fonts/calibri.ttf);
+}
+/*navbar*/
+.navbar {
+  background-color: #F6E981/*#F6E981*/;
+  border-color: transparent;
+  font-family: calibri;
+  padding-top: 0.5%;
+}
+.navbar-collapse ul li a{
+  color: #2B394A!important;
+  font-size: 16pt;
+  padding-bottom: 0.5rem;
+}
+.navbar-collapse ul li:hover{
+  border-bottom: 3px solid;
+  color: #2B394A;
+}
+/*黃色區塊*/
+
+#slogan{
+  background-color: #F6E981;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+#book{
+  width: 120%;
+}
+h1{
+  font-family: NotoSans_bold;
+  font-size: 30pt;
+  color: #223F82;
+}
+
+/*藍色區塊*/
+#member{
+  background-color: #1E2A44;
+  color: #FBFBFC;
+  padding-bottom: 5%;
+}
+h2{
+  font-family: avant;
+  color: #F6E981;
+}
+p{
+  font-family: calibri;
+  padding-left: 8%;
+  padding-right: 8%;
+  font-size: 14pt;
+  letter-spacing: 1pt;
+
+}
+#memrow{
+  margin-left: 10%;
+  margin-top: 10%;
+}
+h3{
+  font-family: NotoSans_light;
+  font-size: 20pt;
+  padding-left: 12px;
+}
+h4{
+  font-family: calibri;
+  font-size: 20pt;
+  padding-left: 12px;
+}
+h5{
+  font-family: NotoSans_light;
+  font-size: 20pt;
+  padding-left: 7px;
+}
+
+.foo img:last-child{display:none}
+.foo:hover img:first-child{display:none}
+.foo:hover img:last-child{display:inline-block}
+#mail_icon{
+  width: 70%;
+}

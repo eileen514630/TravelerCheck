@@ -59,40 +59,59 @@ h1{
   padding-bottom: 5%;
 }
 h2{
-  font-family: avant;
+  font-family: NotoSans_bold;
   color: #F6E981;
+  margin-top: 5%;
 }
 p{
   font-family: calibri;
-  padding-left: 8%;
-  padding-right: 8%;
+  padding-left: 10%;
+  padding-right: 10%;
   font-size: 14pt;
   letter-spacing: 1pt;
+  margin-top: 5%;
 
 }
 #memrow{
-  margin-left: 10%;
-  margin-top: 10%;
+  margin-left: 2%;
+  margin-top: 5%;
 }
+
+.pictext{
+  margin-left: -55px;
+	
+}
+
 h3{
   font-family: NotoSans_light;
-  font-size: 20pt;
-  padding-left: 12px;
+  font-size: 18pt;
+  text-align: center;
+  letter-spacing: 4px;
+
+
+
 }
 h4{
   font-family: calibri;
-  font-size: 20pt;
-  padding-left: 12px;
+  font-size: 16pt;
+  text-align: center;
+  letter-spacing: 3px;
+
+
 }
 h5{
   font-family: NotoSans_light;
-  font-size: 20pt;
-  padding-left: 7px;
+  font-size: 12pt;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 24px;
+
 }
 
 .foo img:last-child{display:none}
 .foo:hover img:first-child{display:none}
 .foo:hover img:last-child{display:inline-block}
-#mail_icon{
-  width: 70%;
+.mail_icon{
+  width: 100px;
+  height: 100px;
 }

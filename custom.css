@@ -1,0 +1,122 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+/*字體*/
+@font-face {
+      font-family: avant;
+      src: url(fonts/avantgargotitctee.ttf);
+}
+@font-face {
+      font-family: NotoSans_light;
+      src: url(fonts/NotoSansCJKtc-Light.otf);
+}
+@font-face {
+      font-family: NotoSans_bold;
+      src: url(fonts/NotoSansCJKtc-Bold.otf);
+}
+@font-face {
+      font-family: calibri;
+      src: url(fonts/calibri.ttf);
+}
+/*navbar*/
+.navbar {
+  background-color: #F6E981/*#F6E981*/;
+  border-color: transparent;
+  font-family: calibri;
+  padding-top: 0.5%;
+}
+.navbar-collapse ul li a{
+  color: #2B394A!important;
+  font-size: 16pt;
+  padding-bottom: 0.5rem;
+}
+.navbar-collapse ul li:hover{
+  border-bottom: 3px solid;
+  color: #2B394A;
+}
+/*黃底部分*/
+
+#slogan{
+  background-color: #F6E981;
+}
+#book{
+  width: 100%;
+}
+h1{
+  font-family: NotoSans_bold;
+  font-size: 30px;
+  white-space: nowrap;
+  color: #223F82;
+  padding-top: 40%;
+  padding-bottom: 30%;
+  text-align: center;  
+}
+
+/*藍底部分*/
+#member{
+  background-color: #1E2A44;
+  color: #FBFBFC;
+}
+h2{
+  font-family: NotoSans_bold;
+  color: #F6E981;
+  margin-top: 5%;
+}
+p{
+  font-family: calibri;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 14pt;
+  letter-spacing: 1pt;
+  margin-top: 5%;
+
+}
+#memrow{
+  margin-top: 5%;
+}
+
+.memeach{
+  margin-bottom: 15%;
+}
+h3{
+  font-family: NotoSans_light;
+  font-size: 18pt;
+  text-align: center;
+  letter-spacing: 4px;
+
+
+
+}
+h4{
+  font-family: calibri;
+  font-size: 16pt;
+  text-align: center;
+  letter-spacing: 3px;
+
+
+}
+h5{
+  font-family: NotoSans_light;
+  font-size: 12pt;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 24px;
+
+}
+
+.mail_icon {
+  width: 101px;
+  height: 101px;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top:18.5%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.foo:hover .mail_icon {
+  opacity: 1;
+}

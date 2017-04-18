@@ -35,28 +35,28 @@ html {
   border-bottom: 3px solid;
   color: #2B394A;
 }
-/*黃色區塊*/
+/*黃底部分*/
 
 #slogan{
   background-color: #F6E981;
-  text-align: center;
-  padding-top: 10%;
-  padding-bottom: 5%;
 }
 #book{
-  width: 120%;
+  width: 100%;
 }
 h1{
   font-family: NotoSans_bold;
-  font-size: 30pt;
+  font-size: 30px;
+  white-space: nowrap;
   color: #223F82;
+  padding-top: 40%;
+  padding-bottom: 30%;
+  text-align: center;  
 }
 
-/*藍色區塊*/
+/*藍底部分*/
 #member{
   background-color: #1E2A44;
   color: #FBFBFC;
-  padding-bottom: 5%;
 }
 h2{
   font-family: NotoSans_bold;
@@ -73,15 +73,12 @@ p{
 
 }
 #memrow{
-  margin-left: 2%;
   margin-top: 5%;
 }
 
-.pictext{
-  margin-left: -55px;
-	
+.memeach{
+  margin-bottom: 15%;
 }
-
 h3{
   font-family: NotoSans_light;
   font-size: 18pt;
@@ -108,10 +105,18 @@ h5{
 
 }
 
-.foo img:last-child{display:none}
-.foo:hover img:first-child{display:none}
-.foo:hover img:last-child{display:inline-block}
-.mail_icon{
-  width: 100px;
-  height: 100px;
+.mail_icon {
+  width: 101px;
+  height: 101px;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top:18.5%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.foo:hover .mail_icon {
+  opacity: 1;
 }

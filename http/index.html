@@ -1,1 +1,80 @@
-form_try
+<!DOCTYPE html>
+<html lang="en">
+<div class="styledform">
+<form>
+<fieldset>
+    <legend>Please enter your student ID:</legend>
+    <input type="text" name="field1" placeholder="Student ID*">  
+</fieldset>
+
+<input type="submit" value="SUBMIT" />
+</form>
+</div>
+
+
+<style type="text/css">
+.styledform{
+    max-width: 500px;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    margin: 10px auto;
+    padding: 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+    font-family: Georgia;
+}
+.styledform fieldset{
+    border: none;
+}
+.styledform legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.styledform input[type="text"],
+.styledform textarea{
+    font-family: Georgia;
+    background: rgba(255,255,255,.1);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 7px;
+    width: 100%;
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    background-color: #e8eeef;
+    color:#8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+    
+}
+.styledform input[type="text"]:focus,
+.styledform textarea:focus,{
+    background: #d2d9dd;
+}
+
+.styledform input[type="submit"],
+.styledform input[type="button"]{
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    margin: 0 auto;
+    background: #1abc9c;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #16a085;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+    font-family: Georgia;
+}
+.styledform input[type="submit"]:hover,
+.styledform input[type="button"]:hover
+{
+    background: #109177;
+}
+</style>
+</html>

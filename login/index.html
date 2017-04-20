@@ -32,10 +32,10 @@
                     <li>
                         <a href="#" target="_blank">HOME</a>
                     </li>
-                    <li class="current">
+                    <li>
                         <a href="#" target="_blank">ABOUT US</a>
                     </li>
-                    <li>
+                    <li  class="current">
                         <a href="#" target="_blank">LOG IN</a>
                     </li>
                 </ul>
@@ -44,86 +44,35 @@
     </nav>
 
 
-    <section id="slogan">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                    <img src="img/book.PNG" id="book">
-               </div>
-                <div class="col-sm-12 col-md-6 col-lg-6" id="descrip">
-                    <h1>“&nbsp;&nbsp;將你身上令人頭痛的零錢<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;存作為你下次的旅行基金</h1>
-                </div>
-            </div>
+    <div class="login-page">
+        <div class="form">
+            <form class="register-form">
+                <input type="text" placeholder="Email Address/ Phone Number"/>
+                <input type="password" placeholder="Password"/>
+                <input type="text" placeholder="email address"/>
+                <button>create</button>
+                <p class="message">Already registered? <a href="#">Sign In</a></p>
+            </form>
+            <form class="login-form">
+                <h1>Login to see more</h1>
+                <input type="text" placeholder="Email Address/ Phone Number">
+                <input type="password" placeholder="Password"/>
+                <button>LOG IN</button>
+                <p>OR</p> 
+                <a href="#" class="social-button" id="facebook-connect"> <span>Login with Facebook</span></a>
+                <a href="#" class="social-button" id="google-connect"> <span>Login with Google</span></a>  
+                <h2 class="message"><a href="#">Forgot your password?</a><br>Need an account? <a href="#">Sign up</a></h2>
+            </form>
         </div>
-    </section>
-
-<section id="member">
-        <div class="container" >
-            <h2>MEET THE TEAM</h2>
-            <p>Traveler Check is a team of creators and problem solvers. We come from all corners of the world and each bring a unique set of skills that complement one another. We are commited to providing the best experience to our clients and ork mate. Each of us performs dedicated and highly specialized roles that we excel at.</p>
-            <div class="row" id="memrow" style="text-align: center">
-                <div class="col-lg-1"></div>
-                <div class="col-sm-4 col-lg-2 memeach" >
-                    <a class="foo" href="mailto:eileen514630@gmail.com">
-                        <span class="rollover"></span>
-                        <img class="img-circle" src="img/chen.png" alt="">
-                    </a>
-                    <div class="pictext">
-                    <h3>陳品儒<hr width="70%" align="center"></h3>
-                    <h4>Desinger</h4>
-                    <h5>工設所<br>介面設計</h5>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-lg-2 memeach">
-                    <a class="foo" href="mailto:eileen514630@gmail.com">
-                        <span class="rollover"></span>
-                        <img class="img-circle" src="img/zhen.png" alt="">
-                    </a>
-                    <div class="pictext">
-                    <h3>甄姵瑜<hr width="70%" align="center"></h3>
-                    <h4>Engineer</h4>
-                    <h5>心理系<br>負責前端</h5>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-lg-2 memeach">
-                    <a class="foo" href="mailto:lyfun0202@gmail.com">
-                        <span class="rollover"></span>
-                        <img class="img-circle" src="img/lin.png" alt="">
-                    </a>
-                    <div class="pictext">
-                    <h3>林庭瑄<hr width="70%" align="center"></h3>
-                    <h4>Engineer</h4>
-                    <h5>工設系<br>負責前端</h5>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-lg-2 memeach">
-                    <a class="foo" href="mailto:#">
-                        <span class="rollover"></span>
-                        <img class="img-circle" src="http://placehold.it/100x100" alt="">
-                    </a>
-                    <div class="pictext">
-                    <h3>陳志安<hr width="70%" align="center"></h3>
-                    <h4>Engineer</h4>
-                    <h5>電機系<br>負責後端</h5>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-lg-2 memeach">
-                    <a class="foo" href="mailto:chsimon4@gmail.com">
-                        <span class="rollover"></span>
-                        <img class="img-circle" src="img/jiang.png" alt="">
-                    </a>
-                    <div class="pictext">
-                    <h3>江耀新<hr width="70%" align="center"></h3>
-                    <h4>Engineer</h4>
-                    <h5>測量系<br>負責後端</h5>
-                    </div>
-                </div>
-                <div class="col-sm-1 col-lg-1"></div>
-            </div>
-        </div>
-    </section>
-
-
-
+    </div>
+    <img src="img/tele.png" id="tele">
 </body>
+
+<script type="text/javascript">
+    
+$('.message a').click(function(){
+   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});
+
+</script>
 </html>

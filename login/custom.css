@@ -2,27 +2,20 @@ html {
     width: 100%;
     height: 100%;
 }
-/*字體*/
+/*fonts*/
 @font-face {
       font-family: avant;
       src: url(fonts/avantgargotitctee.ttf);
 }
 @font-face {
-      font-family: NotoSans_light;
-      src: url(fonts/NotoSansCJKtc-Light.otf);
-}
-@font-face {
-      font-family: NotoSans_bold;
-      src: url(fonts/NotoSansCJKtc-Bold.otf);
-}
-@font-face {
       font-family: calibri;
       src: url(fonts/calibri.ttf);
 }
-/*navbar*/
-#logo{
-	width: 40%;
+@font-face {
+      font-family: calibri_bold;
+      src: url(fonts/calibri_bold.ttf);
 }
+/*navbar*/
 .navbar {
   background-color: #F6E981/*#F6E981*/;
   border-color: transparent;
@@ -35,7 +28,7 @@ html {
 }
 .navbar-collapse ul li a{
   color: #2B394A!important;
-  font-size: 1.5vw;
+  font-size: 15pt;
   padding-bottom: 0.5rem;
 }
 .navbar-collapse ul li:hover{
@@ -47,96 +40,204 @@ html {
   border-bottom: 2px solid #2B394A;
   text-decoration: none; 
 }
-/*yellow part*/
 
-#slogan{
-  background-color: #F6E981;
-}
-#book{
-  width: 100%;
-}
-#descrip{
-	position: relative;
-	text-align: center;
-}
+/*form part*/
 h1{
-  font-family: NotoSans_bold;
-  font-size:22pt;
-  color: #223F82;
-  padding-top: 40%;
-  padding-bottom: 30%;
+  font-family: calibri_bold;
+  font-size: 25pt;
 }
-
-
-/*blue part*/
-#member{
-  background-color: #1E2A44;
-  color: #FBFBFC;
+.login-page{
+  padding-top: 100px;
 }
-h2{
-  font-family: NotoSans_bold;
-  color: #F6E981;
-  margin-top: 5%;
+.form {
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding:2% 2% 0.5% 2%;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: calibri;
+  outline: 0;
+  background: #fff;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-radius: 8px;
+  height: 45px;
+}
+input[type=text],input[type=password] {
+    border: 1px solid #D3D3D3;
+    border-radius: 8px;
+}
+input:focus{
+    border: 1px solid pink!important;
+}
+.form button {
+  font-family: calibri_bold;
+  outline: 0;
+  background: #E16E62;
+  border-radius: 5px;
+  width: 100%;
+  border: 0;
+  padding: 8px;
+  color: #FFFFFF;
+  font-size: 18px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  height: 45px;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #cd5c5c;
 }
 p{
+  margin-top: 15px!important;
+  color: black!important;
   font-family: calibri;
-  padding-left: 10%;
-  padding-right: 10%;
-  font-size: 14pt;
-  letter-spacing: 1pt;
-  margin-top: 5%;
+  font-size: 15pt!important;
 
 }
-#memrow{
-  margin-top: 5%;
-}
-
-.memeach{
-  margin-bottom: 15%;
-}
-h3{
-  font-family: NotoSans_light;
-  font-size: 18pt;
-  text-align: center;
-  letter-spacing: 4px;
-
-
-
-}
-h4{
+h2{
   font-family: calibri;
-  font-size: 16pt;
-  text-align: center;
-  letter-spacing: 3px;
-
-
+  color: black;
+  font-size: 12px;
 }
-h5{
-  font-family: NotoSans_light;
-  font-size: 12pt;
-  text-align: center;
-  letter-spacing: 2px;
-  line-height: 24px;
-
+.form .message {
+  margin-top: 40px!important;
+  color: black;
+  font-size: 12px;
 }
-
-span.rollover {
-	opacity: 1;
-	-o-transition-duration: 1s;
-	-moz-transition-duration: 1s;
-	-webkit-transition: -webkit-transform 1s;
-	background:url(img/mail_icon.png);
-	cursor: pointer;
-	height: 100px;
-	width: 100px;
-	position: absolute;
-	z-index: 10;
-	opacity: 0;
+.form .message a {
+  font-family: calibri_bold;
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
+}
+.form .message a:hover{
+  font-family: calibri_bold;
+  color: black;
+  text-decoration: underline;
+  font-size: 12px;
+}
+.form .register-form {
+  display: none;
 }
 
-span.rollover:hover {
-	opacity: .7;
-	-o-transition-duration: 1s;
-	-moz-transition-duration: 1s;
-	-webkit-transition: -webkit-transform 1s;
-}c
+
+.social-button {
+    font-family: calibri;
+    font-size: 14pt;
+    background-position: 25px 0px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    height: 45px;
+    line-height: 50px;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 8px;
+    margin: 10px auto;
+    outline: rgb(255, 255, 255) none 0px;
+    padding-left: 20%;
+    transition: all 0.2s cubic-bezier(0.72, 0.01, 0.56, 1) 0s;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+#facebook-connect {
+    background: rgb(255, 255, 255) url('https://eswarasai.com/projects/social-login/img/facebook.svg') no-repeat scroll 5px 0px / 30px 50px padding-box border-box;
+    border: 1px solid rgb(60, 90, 154);
+}
+
+#facebook-connect:hover {
+    border-color: rgb(60, 90, 154);
+    background: rgb(60, 90, 154) url('https://eswarasai.com/projects/social-login/img/facebook-white.svg') no-repeat scroll 5px 0px / 30px 50px padding-box border-box;
+    -webkit-transition: all .8s ease-out;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease-out;
+    text-decoration: none;
+}
+
+#facebook-connect span {
+    box-sizing: border-box;
+    color: rgb(60, 90, 154);
+    cursor: pointer;
+    text-align: center;
+    border: 0px none rgb(255, 255, 255);
+    outline: rgb(255, 255, 255) none 0px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+#facebook-connect:hover span {
+    color: #FFF;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+#google-connect {
+    background: rgb(255, 255, 255) url('https://eswarasai.com/projects/social-login/img/google-plus.png') no-repeat scroll 5px 0px / 50px 50px padding-box border-box;
+    border: 1px solid rgb(220, 74, 61);
+}
+
+#google-connect:hover {
+    border-color: rgb(220, 74, 61);
+    background: rgb(220, 74, 61) url('https://eswarasai.com/projects/social-login/img/google-plus-white.png') no-repeat scroll 5px 0px / 50px 50px padding-box border-box;
+    -webkit-transition: all .8s ease-out;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease-out;
+    text-decoration: none;
+}
+
+#google-connect span {
+    box-sizing: border-box;
+    color: rgb(220, 74, 61);
+    cursor: pointer;
+    text-align: center;
+    border: 0px none rgb(220, 74, 61);
+    outline: rgb(255, 255, 255) none 0px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+#google-connect:hover span {
+    color: #FFF;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+#tele{
+  width:100px;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+}
+
+

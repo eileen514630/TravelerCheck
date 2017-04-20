@@ -2,7 +2,7 @@ html {
     width: 100%;
     height: 100%;
 }
-/*字體*/
+/*fonts*/
 @font-face {
       font-family: avant;
       src: url(fonts/avantgargotitctee.ttf);
@@ -20,9 +20,6 @@ html {
       src: url(fonts/calibri.ttf);
 }
 /*navbar*/
-#logo{
-	width: 40%;
-}
 .navbar {
   background-color: #F6E981/*#F6E981*/;
   border-color: transparent;
@@ -35,7 +32,7 @@ html {
 }
 .navbar-collapse ul li a{
   color: #2B394A!important;
-  font-size: 1.5vw;
+  font-size: 15pt;
   padding-bottom: 0.5rem;
 }
 .navbar-collapse ul li:hover{
@@ -139,4 +136,4 @@ span.rollover:hover {
 	-o-transition-duration: 1s;
 	-moz-transition-duration: 1s;
 	-webkit-transition: -webkit-transform 1s;
-}c
+}

@@ -43,18 +43,17 @@ html {
 #book{
   width: 100%;
 }
+#descrip{
+	position: relative;
+	text-align: center;
+}
 h1{
   font-family: NotoSans_bold;
-  font-size: 30px;
+  font-size: 27px;
   white-space: nowrap;
   color: #223F82;
   padding-top: 40%;
   padding-bottom: 30%;
-  text-align: center;
-}
-
-@media (max-width: 300px) {
-    h1 { font-size: 100%; }
 }
 
 /*blue part*/

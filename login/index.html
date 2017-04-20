@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <title>Traveler Check</title>
+    <!--載入jQuery-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--載入bootstrap-->
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--載入css-->
+    <link rel="stylesheet" type="text/css" href="custom.css">
+</head>
+
+
+<body>
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#"><img src="img/logo.png" id="logo"></a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#TraNavbar">
+                    <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="TraNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" target="_blank">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">ABOUT US</a>
+                    </li>
+                    <li  class="current">
+                        <a href="#" target="_blank">LOG IN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="login-page">
+        <div class="form">
+            <form class="register-form">
+                <input type="text" placeholder="Email Address/ Phone Number"/>
+                <input type="password" placeholder="Password"/>
+                <input type="text" placeholder="email address"/>
+                <button>create</button>
+                <p class="message">Already registered? <a href="#">Sign In</a></p>
+            </form>
+            <form class="login-form">
+                <h1>Login to see more</h1>
+                <input type="text" placeholder="Email Address/ Phone Number">
+                <input type="password" placeholder="Password"/>
+                <button>LOG IN</button>
+                <p>OR</p> 
+                <a href="#" class="social-button" id="facebook-connect"> <span>Login with Facebook</span></a>
+                <a href="#" class="social-button" id="google-connect"> <span>Login with Google</span></a>  
+                <h2 class="message"><a href="#">Forgot your password?</a><br>Need an account? <a href="#">Sign up</a></h2>
+            </form>
+        </div>
+    </div>
+    <img src="img/tele.png" id="tele">
+</body>
+
+<script type="text/javascript">
+    
+$('.message a').click(function(){
+   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});
+
+</script>
+</html>

@@ -1,13 +1,24 @@
-
 #!/usr/local/bin/node
-/* the above line (must be the first line) enables apache to execute this program */
 
-/* parse query to object */
 var querystring = require('querystring');
-var param = querystring.parse(process.env.QUERY_STRING);
+var fs = require('fs');
+ 
+ var parsedstring = querystring.parse(process.env.QUERY_STRING); 
+ var studentID = parsedstring.id;
 
-/* return header to browser */
-console.log("Content-type: text/html; charset='utf-8'\n")
+ var dataArr = JSON.parse(fs.readFileSync('name.json', 'utf8'));
+ var found = false;
 
-/* return normal HTML content */
-console.log('<h1>Hello World!</h1>'); 
+ console.log("Content-type: text/html; charset: 'utf-8'\n");
+ for(var i = 0; i < dataArr.length; i++){
+  if (dataArr[i].id == studentID){
+      console.log("<h1>Welcome, " + dataArr[i].name +  "!</h1>");
+          found = true;
+              return;
+                }
+                }
+
+
+if(!found){
+   console.log("<h1>Sorry. you are not our team member</h1>");
+}
